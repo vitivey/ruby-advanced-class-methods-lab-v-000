@@ -64,7 +64,7 @@ class Song
     song = self.new
     song.name=name
     song.artist_name=artist_name
-    save
+    song.save
     song
   end
 end
