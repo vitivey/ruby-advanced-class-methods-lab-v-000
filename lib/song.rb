@@ -57,4 +57,14 @@ class Song
     song
   end
 
+  def self.create_from_filename
+    array = file.split("-")
+    artist_name =array[0].strip
+    name=array[1].split(".")[0].strip
+    song = self.new
+    song.name=name
+    song.artist_name=artist_name
+    save
+    song
+  end
 end
