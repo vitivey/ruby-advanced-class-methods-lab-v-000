@@ -51,6 +51,7 @@ class Song
     array = file.split("-")
     artist_name =array[0]
     name=array[1].split(".")[0]
+    binding.pry
   end
 
 end
