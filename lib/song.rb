@@ -33,6 +33,7 @@ class Song
 
   def self.find_by_name(song_name)
     self.all.find{|instance| instance.name == song_name}
+    binding.pry
   end
 
   def self.find_or_create_by_name(song_name)
