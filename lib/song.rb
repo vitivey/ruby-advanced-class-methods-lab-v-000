@@ -51,7 +51,10 @@ class Song
     array = file.split("-")
     artist_name =array[0].strip
     name=array[1].split(".")[0].strip
-    binding.pry
+    song = self.new
+    song.name=name
+    song.artist_name=artist_name
+    song
   end
 
 end
