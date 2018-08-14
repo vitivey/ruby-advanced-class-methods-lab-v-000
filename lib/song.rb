@@ -49,8 +49,8 @@ class Song
 
   def self.new_from_filename(file)
     array = file.split("-")
-    artist_name =array[0]
-    name=array[1].split(".")[0]
+    artist_name =array[0].strip
+    name=array[1].split(".")[0].strip
     binding.pry
   end
 
